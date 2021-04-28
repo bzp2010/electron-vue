@@ -40,7 +40,7 @@ async function build () {
   del.sync(['dist/electron/*', '!.gitkeep'])
 
   const taskList = ['main', 'renderer']
-  const m = new Multispinner(taskList, {
+  const m = new MultiSpinner(taskList, {
     preText: 'building',
     postText: 'process'
   })
